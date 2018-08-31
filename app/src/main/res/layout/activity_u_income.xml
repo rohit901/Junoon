@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".uIncomeActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/genDetailsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Income, Family and appliances"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatefathernameEditText"
+                android:layout_alignStart="@+id/updatefathernameEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Father\'s Name:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatefathernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatefatheroccupEditText"
+                android:layout_alignStart="@+id/updatefatheroccupEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Father\'s Occupation:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatefatheroccupEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/mothernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatemothernameEditText"
+                android:layout_alignStart="@+id/updatemothernameEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Mother\'s Name:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatemothernameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/motheroccupTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatemotheroccupEditText"
+                android:layout_alignStart="@+id/updatemotheroccupEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Mother\'s Occupation:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatemotheroccupEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/incomeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updateincomeEditText"
+                android:layout_alignStart="@+id/updateincomeEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Income Per Month:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updateincomeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="number" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/TotalfamilyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatetotfamilyEditText"
+                android:layout_alignStart="@+id/updatetotfamilyEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Total Family Members:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatetotfamilyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="number" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/earningfamilyTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updateearningfamilyEditText"
+                android:layout_alignStart="@+id/updateearningfamilyEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Earning Family Member:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updateearningfamilyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/numsiblingsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatenumsiblingsEditText"
+                android:layout_alignStart="@+id/updatenumsiblingsEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Number of Studying Siblings:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatenumsiblingsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="number" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/sibtakenscholarTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatesiblingsscholarEditText"
+                android:layout_alignStart="@+id/updatesiblingsscholarEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Siblings Taken in Scholarship:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatesiblingsscholarEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/nonumangsiblingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatenonumangsiblingEditText"
+                android:layout_alignStart="@+id/updatenonumangsiblingEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Non Umang Sibling Fee Details:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatenonumangsiblingEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/extraExpensesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updateextraexpensesEditText"
+                android:layout_alignStart="@+id/updateextraexpensesEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Extra Expenses(if any):"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updateextraexpensesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/appliancepreTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_above="@+id/updateapplianceCheckBox1"
+                android:layout_alignStart="@+id/updateapplianceCheckBox1"
+                android:text="Appliance Present:"
+                android:textColor="#5E35B1" />
+
+            <CheckBox
+                android:id="@+id/updateapplianceCheckBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:text="TV"/>
+            <CheckBox
+                android:id="@+id/updateapplianceCheckBox2"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/updateapplianceCheckBox1"
+                android:layout_height="wrap_content"
+                android:text="Fridge"/>
+            <CheckBox
+                android:id="@+id/updateapplianceCheckBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateapplianceCheckBox2"
+                android:text="Motor Vehicle"/>
+
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/updatenextBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:text="Update" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -31,8 +31,24 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
-        android:text="Update:"
+        android:layout_marginTop="11dp"
+        android:text="School List:"
         android:textColor="@android:color/holo_red_dark"
         android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/searchSchoolList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/updateListView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignStart="@+id/updateListView"
+        android:layout_marginBottom="-100dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Enter School Name"
+        android:inputType="textPersonName" />
+
+
 </RelativeLayout>

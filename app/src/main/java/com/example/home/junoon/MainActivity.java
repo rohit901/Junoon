@@ -1,6 +1,8 @@
 package com.example.home.junoon;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +34,14 @@ public class MainActivity extends AppCompatActivity {
     EditText schoolEditText;
     EditText phoneEditText;
 
+    EditText feeinstal2;
+    EditText feeinstal3;
+    EditText phonenum;
+    EditText address;
+    SharedPreferences sharedPreferences;
+
+
+
     Button submitBtn;
 
     String nameText;
@@ -41,25 +51,34 @@ public class MainActivity extends AppCompatActivity {
 
     Button updateBtn;
 
+    Button nextBtn1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        nameEditText = (EditText)findViewById(R.id.unameEditText);
-        classEditText = (EditText)findViewById(R.id.uclassEditText);
-        schoolEditText = (EditText)findViewById(R.id.uschoolEditText);
-        phoneEditText = (EditText)findViewById(R.id.uphoneEditText);
-        submitBtn = (Button)findViewById(R.id.submitBtn);
-        updateBtn = (Button) findViewById(R.id.updateBtn);
+        nameEditText = (EditText)findViewById(R.id.unameEditText);  //student name
+        classEditText = (EditText)findViewById(R.id.uclassEditText); //class
+        schoolEditText = (EditText)findViewById(R.id.uschoolEditText); //school
+        phoneEditText = (EditText)findViewById(R.id.uphoneEditText); //fee install 1
+        feeinstal2 = (EditText)findViewById(R.id.feeinst2EditText);
+        feeinstal3 = (EditText)findViewById(R.id.feeinst3EditText);
+        phonenum = (EditText)findViewById(R.id.phonenumEditText);
+        address = (EditText)findViewById(R.id.addressEditText);
+        nextBtn1 = (Button) findViewById(R.id.nextBtn1);
+        sharedPreferences = this.getSharedPreferences("com.example.home.junoon", Context.MODE_PRIVATE);
 
-        updateBtn.setOnClickListener(new View.OnClickListener() {
+        //submitBtn = (Button)findViewById(R.id.submitBtn);
+        //updateBtn = (Button) findViewById(R.id.updateBtn);
+
+       /* updateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(),updateActivity.class);
                 startActivity(intent);
             }
-        });
-        submitBtn.setOnClickListener(new View.OnClickListener() {
+        });*/
+       /* submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 nameText = nameEditText.getText().toString();
@@ -73,7 +92,41 @@ public class MainActivity extends AppCompatActivity {
                     new SendRequest().execute();
                 }
             }
-        });
+        });*/
+
+        nameEditText.setText(sharedPreferences.getString("Name",""));
+        classEditText.setText(sharedPreferences.getString("Class",""));
+        schoolEditText.setText(sharedPreferences.getString("School",""));
+        phoneEditText.setText(sharedPreferences.getString("Feeone",""));
+        feeinstal2.setText(sharedPreferences.getString("Feetwo",""));
+        feeinstal3.setText(sharedPreferences.getString("Feethree",""));
+        phonenum.setText(sharedPreferences.getString("Phone",""));
+        address.setText(sharedPreferences.getString("Addrs",""));
+
+       nextBtn1.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(getApplicationContext(), AcademicFieldActivity.class);
+               sharedPreferences.edit().putString("Name", nameEditText.getText().toString()).apply();
+               sharedPreferences.edit().putString("Class", classEditText.getText().toString()).apply();
+               sharedPreferences.edit().putString("School", schoolEditText.getText().toString()).apply();
+               sharedPreferences.edit().putString("Feeone", phoneEditText.getText().toString()).apply();
+               sharedPreferences.edit().putString("Feetwo", feeinstal2.getText().toString()).apply();
+               sharedPreferences.edit().putString("Feethree", feeinstal3.getText().toString()).apply();
+               sharedPreferences.edit().putString("Phone", phonenum.getText().toString()).apply();
+               sharedPreferences.edit().putString("Addrs", address.getText().toString()).apply();
+               startActivity(intent);
+               overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+
+
+           }
+       });
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     public class SendRequest extends AsyncTask<String, Void, String> {

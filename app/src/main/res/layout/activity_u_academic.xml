@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".uAcademicActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/genDetailsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Academic Scores, Attendance, Etc"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatepercentlastexamEditText"
+                android:layout_alignStart="@+id/updatepercentlastexamEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Percentage in Last Exam:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatepercentlastexamEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updateschoolattdEditText"
+                android:layout_alignStart="@+id/updateschoolattdEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="School Attendance:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updateschoolattdEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/mothernameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updateattendsnssEditText"
+                android:layout_alignStart="@id/updateattendsnssEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Attends NSS School?:"
+                android:textColor="#5E35B1" />
+            <EditText
+                android:id="@+id/updateattendsnssEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/testsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatesv1testEditText"
+                android:layout_alignStart="@+id/updatesv1testEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Tests(Percentage):"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatesv1testEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="School Visit 1"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/updatehv1testEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatesv1testEditText"
+                android:layout_marginLeft="8dp"
+                android:hint="Home Visit 1"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/updatesv2testEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/updatehv1testEditText"
+                android:hint="School Visit 2"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/updatehv2testEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatesv2testEditText"
+                android:layout_marginLeft="8dp"
+                android:hint="Home Visit 2"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/updatesv3testEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@+id/updatehv2testEditText"
+                android:hint="School Visit 3"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/updatehv3testEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatesv3testEditText"
+                android:layout_marginLeft="8dp"
+                android:hint="Home Visit 3"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="number" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/voluntfeedbakTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatevoluntfeedbakEditText"
+                android:layout_alignStart="@+id/updatevoluntfeedbakEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Volunteer Feedback:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatevoluntfeedbakEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:hint="Visit 1"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/updatevoluntfeedbakEditText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:layout_below="@+id/updatevoluntfeedbakEditText"
+                android:hint="Visit 2"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/updatevoluntfeedbakEditText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_below="@id/updatevoluntfeedbakEditText2"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="Visit 3"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/drivepiclinkTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatedrivepicEditText"
+                android:layout_alignStart="@+id/updatedrivepicEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Drive Pic Link:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatedrivepicEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/final1Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatefinal1EditText"
+                android:layout_alignStart="@+id/updatefinal1EditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Final 1:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatefinal1EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/final2Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatefinal2EditText"
+                android:layout_alignStart="@+id/updatefinal2EditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Final 2:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatefinal2EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/final3Tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatefinal3EditText"
+                android:layout_alignStart="@+id/updatefinal3EditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Final 3:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatefinal3EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/CommentsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/updatecommentsEditText"
+                android:layout_alignStart="@+id/updatecommentsEditText"
+                android:layout_marginBottom="-48dp"
+                android:text="Comments:"
+                android:textColor="#5E35B1" />
+
+            <EditText
+                android:id="@+id/updatecommentsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="48dp"
+                android:ems="10"
+                android:inputType="text" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/updatenextBtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30dp"
+            android:text="Next" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
